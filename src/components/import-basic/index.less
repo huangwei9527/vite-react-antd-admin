@@ -1,0 +1,92 @@
+@import 'styles/var.less';
+.app-import-basic {
+  display: flex;
+
+  .label {
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  .tips {
+    font-size: 12px;
+    color: @gray;
+
+    i {
+      font-size: 25px;
+    }
+  }
+
+  .jia {
+    margin-bottom: 8px;
+  }
+
+  .small {
+    font-size: 12px;
+    margin-top: 2px;
+    line-height: 24px;
+    padding: 0 12px;
+  }
+
+  .kd-upload-text-list {
+    max-height: 177px;
+    overflow-y: auto;
+  }
+
+  .kd-upload-text-list-item {
+    padding: 0 !important;
+    padding-left: 8px !important;
+
+    .kd-upload-text-list-item-name,
+    .kd-upload-text-list-item-size,
+    .kd-upload-text-list-item-delete {
+      font-size: 12px !important;
+    }
+
+    .kd-upload-text-list-item-name {
+      max-width: 200px !important;
+    }
+
+    &:hover {
+      border-radius: 4px !important;
+    }
+  }
+
+  .kd-upload-text-list-item-action {
+    padding-right: 10px !important;
+    line-height: 28px !important;
+  }
+
+}
+
+.app-import-basic-single-hasFile {
+  .kd-upload {
+    .kd-upload-drag {
+      display: none;
+    }
+
+    .kd-upload-text-list {
+      margin-top: -10px;
+      border-top: none;
+    }
+
+  }
+}
+
+.kd-upload-drag {
+  height: 126px !important;
+  border-radius: 6px;
+}
+
+.singleWrapper {
+  font-size: 13px;
+  color: @color-text;
+  line-height: 18px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.upload-btn {
+  font-size: 13px;
+  color: @color-theme;
+}

@@ -1,0 +1,117 @@
+@import 'styles/var.less';
+.wrapper{
+  display: inline-block;
+  cursor: pointer;
+}
+.items{
+  padding-bottom: 24px;
+  &>p{
+    margin-bottom: 12px;
+  }
+  .itemsTitle{
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.formItem{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.itemsLayout{
+  .formItem{
+    margin-bottom: 18px;
+  }
+  .itemsTitle{
+    margin-bottom: 18px;
+  }
+}
+
+.sidebarItemWrapper{
+  display: flex;
+}
+.sidebarItem{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 86px;
+  height: 60px;
+  display: flex;
+  padding: 6px;
+  border-radius: 4px;
+  margin-right: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, .08), 0 3px 6px 0 rgba(0, 0, 0, .06), 0 5px 12px 4px rgba(0, 0, 0, .04);
+  .sidebarItemL{
+    width: 18px;
+    height: 100%;
+    background-color: @sidebar-background;
+    &.dark{
+      background-color: @sidebar-background-dark;
+    }
+  }
+  .sidebarItemR{
+    flex: 1;
+    margin-left: 8px;
+    background-color: rgb(239, 239, 245);
+  }
+  &.active{
+    outline-color: @color-primary;
+    outline-width: 2px;
+    outline-style: solid;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      bottom: -12px;
+      right: -12px;
+      transform: rotate(45deg);
+      background-color: @color-primary;
+    }
+  }
+}
+
+.colorThemeWrapper{
+  display: block;
+  width: 100%;
+  margin-bottom: 28px;
+  overflow: hidden;
+  .colorThemeItem{
+    position: relative;
+    float: left;
+    margin-bottom: 8px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    margin-right: 14px;
+    text-align: center;
+    line-height: 34px;
+    color: white;
+    border-radius: 4px;
+    .hasCheked{
+      position: absolute;
+      z-index: 10;
+      top: 0px;
+      left: 6px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .colorThemeItemText{
+      font-size: 12px;
+      color: #ddd;
+      opacity: 0.7;
+    }
+  }
+  .colorThemeItem:nth-of-type(5){
+    margin-right: 0;
+  }
+  .colorThemeItem:nth-of-type(10){
+    margin-right: 0;
+  }
+}
+
+.itemsTitle2{
+  margin-bottom: 12px;
+}

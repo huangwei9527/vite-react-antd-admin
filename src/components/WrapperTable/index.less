@@ -1,0 +1,132 @@
+@import 'styles/var.less';
+
+.app-table-k-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .ant-spin-nested-loading,
+  .ant-spin-container,
+  .ant-table,
+  .ant-table-container,
+  .ant-table-content,
+  .ant-table-tbody {
+    height: 100%;
+  }
+  .ant-table-wrapper{
+    overflow: hidden;
+    border: 1px solid #e4ecf4 !important;
+    border-radius: 8px;
+  }
+  .ant-table-body{
+    overflow: auto !important;
+  }
+
+  .ant-table-empty .ant-table-body{
+    overflow: hidden !important;
+    max-width: unset !important;
+    height: 100%;
+  }
+
+  table {
+    max-height: 100%;
+  }
+
+  .ant-table-body {
+    height: calc(100% - 34px);
+  }
+  .ant-table-tbody{
+    max-height: 100%;
+    height: unset;
+  }
+  &.colSetIsGroup{
+    .ant-table-body {
+      height: calc(100% - 69px);
+    }
+  }
+
+  // 分页
+  .ag-table-pagination {
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 12px;
+    height: 32px;
+
+    .ag-table-total-count {
+      position: relative;
+      align-items: flex-start;
+      margin-top: 8px;
+      padding: 0 6px;
+      color: @color-text-gray;
+
+      span {
+        display: inline-block;
+        padding: 0 6px;
+        color: @color-text;
+      }
+    }
+  }
+
+  // 表格颜色调整
+
+  // 页头
+  .ant-table-wrapper .ant-table-thead>tr>th,
+  .ant-table-wrapper .ant-table-thead>tr>td {
+    color: #333;
+    background-color: #eaf0fa !important;
+  }
+
+  .ant-table-wrapper .ant-table-cell,
+  .ant-table-wrapper .ant-table-thead>tr>th,
+  .ant-table-wrapper .ant-table-tbody>tr>th,
+  .ant-table-wrapper .ant-table-tbody>tr>td,
+  .ant-table-wrapper tfoot>tr>th,
+  .ant-table-wrapper tfoot>tr>td {
+    padding: 7px 16px;
+  }
+
+  .ant-table-wrapper .ant-table {
+  }
+
+
+  .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-body >table >tbody>tr>td{
+    border-inline-end: 1px solid #e4ecf4;
+  }
+  .ant-table-wrapper .ant-table-tbody >tr >td{
+    border-bottom: 1px solid #e4ecf4;
+  }
+  .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table >thead>tr>th.ant-table-cell-fix-right{
+    border-inline-end:none;
+    border-left: 1px solid #dfe3e8;
+  }
+  .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table >thead>tr>th{
+    border-inline-end: 1px solid #dfe3e8;
+  }
+  .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table >thead >tr>th{
+    border-bottom: 1px solid #dfe3e8;
+  }
+  .ant-table-wrapper .ant-table{
+    scrollbar-color: unset;
+  }
+  .ant-table-row:nth-child(odd){
+    background-color: #fafcff;
+  }
+  .ant-table-wrapper .ant-table-cell-fix-left,
+  .ant-table-wrapper .ant-table-cell-fix-right{
+    // background: transparent;
+  }
+  .ant-table-empty .ant-table-expanded-row-fixed{
+    max-width: 99%;
+    &::after{
+      display: none;
+    }
+  }
+  .ant-table-empty td.ant-table-cell{
+    border: none !important;
+  }
+}

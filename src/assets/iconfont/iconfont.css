@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4626531 */
+  src: url('iconfont.woff2?t=1723283547476') format('woff2'),
+       url('iconfont.woff?t=1723283547476') format('woff'),
+       url('iconfont.ttf?t=1723283547476') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gengduo:before {
+  content: "\e611";
+}
+
+.icon-shezhi1:before {
+  content: "\e635";
+}
+
+.icon-zuoqiehuan:before {
+  content: "\e628";
+}
+
+.icon-lirun-youqie:before {
+  content: "\e6d4";
+}
+
+.icon-shebeileinvr:before {
+  content: "\e9ef";
+}
+
+.icon-shexiangtou:before {
+  content: "\e621";
+}
+
+.icon-rizhi:before {
+  content: "\e60c";
+}
+
+.icon-xitongcanshu:before {
+  content: "\e6bb";
+}
+
+.icon-yingjiantanzhen:before {
+  content: "\e8a8";
+}
+
+.icon-lukou:before {
+  content: "\e613";
+}
+
+.icon-jiankongdaping:before {
+  content: "\e6e0";
+}
+
+.icon-cheliangguanli:before {
+  content: "\e603";
+}
+
+.icon-predict_log:before {
+  content: "\e720";
+}
+
+.icon-shuzhiyunying-xiantiao:before {
+  content: "\e73b";
+}
+
+.icon-weizhangguanli:before {
+  content: "\e63c";
+}
+
+.icon-shebeiguanli:before {
+  content: "\e765";
+}
+
+.icon-shaixuan:before {
+  content: "\e61d";
+}
+
+.icon-shaixuan1:before {
+  content: "\e62b";
+}
+
+.icon-ruanjiankaifabao:before {
+  content: "\ec2e";
+}
+
+.icon-js:before {
+  content: "\ec68";
+}
+
+.icon-shuaxin:before {
+  content: "\e602";
+}
+
+.icon-bangzhuzhongxin:before {
+  content: "\e652";
+}
+
+.icon-gonggao:before {
+  content: "\e678";
+}
+
+.icon-sousuo:before {
+  content: "\e7a8";
+}
+
+.icon-bangzhu1:before {
+  content: "\e620";
+}
+
+.icon-warning:before {
+  content: "\e605";
+}
+
+.icon-jinggao1:before {
+  content: "\e60f";
+}
+
+.icon-chenggong1:before {
+  content: "\e60a";
+}
+
+.icon-shezhi:before {
+  content: "\e606";
+}
+
+.icon-xiangxiazhankai:before {
+  content: "\e8f2";
+}
+
+.icon-yonghuguanli1:before {
+  content: "\e60b";
+}
+
+.icon-yonghuguanli:before {
+  content: "\e601";
+}
+
+.icon-taiyang:before {
+  content: "\e62e";
+}
+
+.icon-moonyueliang:before {
+  content: "\e6dd";
+}
+
+.icon-xiangzuo:before {
+  content: "\e661";
+}
+
+.icon-xiangzuo1:before {
+  content: "\e600";
+}
+
+.icon-quanping:before {
+  content: "\e658";
+}
+
+.icon-quxiaoquanping:before {
+  content: "\e669";
+}
+
+.icon-xiangshang:before {
+  content: "\e807";
+}
+
+.icon-home:before {
+  content: "\e608";
+}
+

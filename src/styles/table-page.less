@@ -1,0 +1,314 @@
+@import "./var.less";
+// 典型报表页面样式， 搜索区 操作按钮区 表格区域 分页区域
+.custom-k-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+
+}
+
+.custom-page-class-wrapper {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.custom-page-search-wrapper {
+  display: block;
+
+  .custom-page-search {
+    display: inline-block;
+  }
+
+  .custom-search-item {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+  }
+
+}
+
+.custom-page-opt-wrapper {
+  float: right;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .custom-opt-item {
+    display: inline-block;
+    margin-left: 12px;
+  }
+}
+
+.custom-page-table-wrapper {
+  flex: 1;
+  display: block;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.custom-page-bottom-counter {
+  font-size: 14px;
+  color: #5C6D74;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 14px;
+  span {
+    color: #022433;
+  }
+}
+
+.custom-page-table-loading-wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+
+.custom-search-item {
+
+  .kd-select,
+  .kd-input {
+    width: 100%;
+  }
+}
+// 模板1的公共样式
+.app-page1 {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .app-page1-filter {
+    position: relative;
+    display: block;
+    width: 100%;
+
+  }
+
+  .app-page1-filter-fix-height{
+    height: 44px;
+  }
+
+  .app-page1-filter-container{
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  .app-page1-filter-container-btns{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: 10;
+    display: flex;
+  }
+
+  .app-page1-table {
+    position: relative;
+    flex: 1 0 auto;
+    height: 0;
+  }
+
+}
+/**
+* 页面显示，外层选择时间切换样式重置
+**/
+.page1-filter-container {
+  position: relative;
+
+  .page1-filter-container-select {
+    display: flex;
+    align-items: center;
+
+    .page1-filter-container-select_select {
+      position: relative;
+
+      .kd-select-borderless {
+        overflow: hidden;
+        padding-right: 14px;
+      }
+    }
+
+    .page1-filter-container-select_line {
+      position: relative;
+      height: 20px;
+      width: 1px;
+      margin-left: 8px;
+      background-color: #d9d9d9;
+    }
+
+    .kd-xw-date-range-picker {
+      width: 190px !important;
+      padding: 0 8px;
+      justify-content: flex-start;
+    }
+
+    .kd-xw-date-range-picker-left-picker {
+      width: 80px;
+      margin-right: 2px;
+
+      .kd-date-picker-suffix {
+        display: none;
+      }
+    }
+
+    .kd-xw-date-range-picker-right-picker {
+      width: 106px;
+      margin-left: 4px;
+
+      .kd-date-picker-suffix {
+        display: none;
+      }
+    }
+
+    .kd-date-picker {
+      width: 100%;
+      border-bottom: none;
+    }
+  }
+
+}
+// 模板 1 end
+
+// 模板2的公共样式
+.app-page2 {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .app-page2__filter {
+    position: relative;
+  }
+
+  .app-page2__table {
+    position: relative;
+    flex-shrink: 0;
+    flex: 1;
+  }
+
+}
+
+/**
+* 页面显示，外层选择时间切换样式重置
+**/
+.page2-filter-container{
+  position: relative;
+  .page2-filter-container-select {
+    display: flex;
+    align-items: center;
+    .page2-filter-container-select_select {
+      position: relative;
+      .kd-select-borderless {
+        overflow: hidden;
+        padding-right: 14px;
+      }
+    }
+
+    .page2-filter-container-select_line {
+      position: relative;
+      height: 20px;
+      width: 1px;
+      margin-left: 8px;
+      background-color: #d9d9d9;
+    }
+
+    .kd-xw-date-range-picker {
+      width: 190px !important;
+      padding: 0 8px;
+      justify-content: flex-start;
+    }
+
+    .kd-xw-date-range-picker-left-picker {
+      width: 80px;
+      margin-right: 2px;
+      .kd-date-picker-suffix {
+        display: none;
+      }
+    }
+    .kd-xw-date-range-picker-right-picker {
+      width: 106px;
+      margin-left: 4px;
+      .kd-date-picker-suffix {
+        display: none;
+      }
+    }
+
+    .kd-date-picker {
+      width: 100%;
+      border-bottom: none;
+    }
+  }
+
+}
+
+
+.app-page2__filter_container {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.app-page2__filter_container_btns {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  z-index: 10;
+  display: flex;
+}
+// 模板 2 end
+
+
+.fold_container__disBox__leftJsx__disPanel__valBox {
+
+  .app-filter-item-box {
+    padding-left: 0;
+    border: none;
+  }
+}
+
+.filter-iterm-input{
+  border: none !important;
+  outline: none !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  box-shadow: none !important;
+}
+
+.tableExpandIcon{
+  font-size: 14px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: @gray3;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  outline: none;
+  padding: 1px;
+  cursor: pointer;
+  margin-right: 4px;
+  transition: background-color .1s cubic-bezier(0,0,1,1);
+  &:hover{
+    color: @color-text2;
+    background-color: @gray4;
+    border-color: transparent;
+  }
+}
+.tableExpandIconEmpty{
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  margin-right: 4px;
+}

@@ -1,0 +1,63 @@
+.app-filter-item-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 6px;
+  height: 32px;
+  padding: 0 12px;
+  overflow: hidden;
+
+  &.disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+
+  .app-filter-item-box-label {
+    font-size: 14px;
+    color: #5C6D74;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: 0.2s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    .kd-select {
+      position: relative;
+
+      .kd-select-wrapper {
+        padding-right: 14px;
+      }
+    }
+  }
+
+  .app-filter-item-box-content {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+
+    .kd-select {
+      padding-left: 10px;
+
+      .kd-select-suffix {
+        .kdicon {
+          line-height: 1;
+        }
+      }
+    }
+
+    .kd-input {
+      padding-right: 0;
+    }
+
+    .subject-more-btn-icon {
+      right: -3px;
+      top: 4px
+    }
+  }
+}

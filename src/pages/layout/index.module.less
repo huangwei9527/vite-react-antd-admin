@@ -1,0 +1,27 @@
+@import 'styles/var.less';
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: @page-background;
+  display: flex;
+  position: relative;
+  z-index: 10;
+
+  .inner {
+    height: 100%;
+    flex: 1;
+    background: @container-background;
+    box-shadow: @light-box-shadow;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 100;
+
+    &.themeDark {
+      box-shadow: @dark-box-shadow;
+    }
+    &.isPageBorderRadius{
+      border-radius: 20px 0px 0px 20px;
+    }
+  }
+}

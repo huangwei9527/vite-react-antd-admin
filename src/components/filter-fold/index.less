@@ -1,0 +1,211 @@
+@import 'styles/var.less';
+
+.filter-fold_container {
+  .filter-fold_container__disBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .fold_container__disBox__leftJsx__disPanel {
+      position: relative;
+      display: flex;
+      min-width: 10px;
+      padding: 0 8px 0 4px;
+      height: 34px;
+      line-height: 32px;
+      font-size: 14px;
+      border: 1px solid rgba(217, 217, 217, 1);
+      border-radius: 6px;
+
+      .fold_container__disBox__leftJsx__disPanel__valBox {
+        display: flex;
+        align-items: center;
+        .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector,
+        .ant-input-outlined,
+        .ant-picker-outlined{
+          border: none;
+          box-shadow: none;
+          outline: none;
+          background: transparent;
+        }
+        .ant-picker-range{
+          width: 230px;
+        }
+      }
+
+      .fold_container__disBox__leftJsx__disPanel__iconBox {
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        color: @color-text;
+        letter-spacing: 0;
+        border-left: 1px solid #d9d9d9;
+        padding-left: 10px;
+        user-select: none;
+
+        .iconfont {
+          font-size: 16px;
+        }
+
+        .icon-shaixuan {
+          color: @color-primary;
+        }
+
+        span {
+          margin-right: 4px;
+        }
+
+        &:hover {
+          color: @color-primary;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: @color-primary;
+      }
+
+      &.show {
+        &::after {
+          content: '';
+          cursor: default;
+          display: block;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          margin-left: -18px;
+          width: 10px;
+          height: 10px;
+          background-color: #fff;
+          border-color: #d6d6d6;
+          border-style: solid;
+          border-width: 1px 1px 0 0;
+          transform: rotate(-45deg);
+          z-index: 20;
+        }
+      }
+    }
+
+    .fold_container__disBox__rightJsx {
+      display: flex;
+      height: 32px;
+      line-height: 18px;
+      align-items: center;
+    }
+
+  }
+
+  .filter-fold_container__showBox {
+    position: relative;
+    border: 1px solid @color-border;
+    border-radius: 6px;
+    margin-top: 12px;
+    display: none;
+
+    .fold_container__showBox__content {
+      box-sizing: border-box;
+      padding: 0 20px 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .fold_container__showBox__content__foldItem {
+        position: relative;
+        width: 25.6%;
+        margin-top: 16px;
+
+        .kd-date-picker-underline {
+          border-bottom: none;
+        }
+
+        .kd-date-picker {
+          width: 100%;
+        }
+      }
+
+      .fold_container__showBox__content__foldItem_extend {
+        margin-top: 16px;
+        position: relative;
+        width: 100% !important;
+      }
+
+      @media (max-width: 1620px) {
+        .fold_container__showBox__content__foldItem {
+          width: 29%;
+        }
+      }
+
+      @media (max-width: 1300px) {
+        .fold_container__showBox__content__foldItem {
+          width: 32%;
+        }
+      }
+      
+      .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector,
+      .ant-input-outlined,
+      .ant-picker-outlined{
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background: transparent;
+      }
+      .ant-picker-range{
+        width: 230px;
+      }
+      
+    }
+
+    .fold_container__showBox__bottom {
+      position: relative;
+      padding: 0 20px;
+      height: 48px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid rgba(217, 217, 217, 1);
+
+      button {
+        margin-right: 12px;
+      }
+
+      .fold_container__showBox__bottom__holdUp {
+        position: relative;
+        cursor: pointer;
+        font-size: 14px;
+        color: @color-text;
+        letter-spacing: 0;
+        font-weight: 400;
+        margin-right: 22px;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 8px;
+          right: -17px;
+          width: 8px;
+          height: 8px;
+          background-color: #fff;
+          border-color:  @color-text;
+          border-style: solid;
+          border-width: 1px 1px 0 0;
+          transform: rotate(-45deg);
+          z-index: 20;
+        }
+
+        &:hover {
+          color: @color-primary;
+
+          &::after {
+            border-color: @color-primary;
+          }
+        }
+      }
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@import 'styles/var.less';
+
+.filterItemWrappper {
+  display: inline-block;
+
+  .filterItemInput {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+  }
+
+
+  .filterItemAssistCategory {
+    display: flex;
+    width: 100%;
+
+    &>div:first-child {
+      width: 78px;
+      margin-right: 4px;
+    }
+
+    &>div:last-child {
+      width: calc(100% - 82px);
+    }
+  }
+
+  :global(.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector) {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+  }
+  :global(.ant-select .ant-select-arrow){
+    inset-inline-end: 0;
+  }
+  :global(.ant-select-selector) {
+    border: none !important;
+    outline: none !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    box-shadow: none !important;
+  }
+
+  &.widthUnset {
+    width: unset;
+  }
+}
+
+.filterItemAssistCategoryWrappper.filterCategoryVertical {
+  .filterItemAssistCategory {
+    display: block;
+
+    &>div:first-child {
+      width: 120px;
+      margin-bottom: 10px;
+      font-size: 0;
+    }
+
+    &>div:last-child {
+      width: 100%;
+      font-size: 0;
+    }
+  }
+
+  :global(.fold_vertical_item_box) {
+    height: auto;
+    align-items: flex-start;
+  }
+}
+
+.rangeWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  .rangeLInput {
+    flex: 1;
+  }
+
+  .rangeCText {
+    width: 24px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .rangeRInput {
+    flex: 1;
+  }
+}
+
+.subjectRangeWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  .subjectRangeLInput {
+    flex: 1;
+  }
+
+  .subjectRangeCText {
+    width: 24px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .subjectRangeRInput {
+    flex: 1;
+  }
+
+  :global(.icon-guanbi) {
+    right: 16px !important;
+    top: 4px !important;
+  }
+}
+
+.stepperRange {
+  
+}
+
+
+:global(.filter_fold_vertical_trigger_content__foldItem) {
+  
+}
+
+.filterCheckbox {
+  :global(.app-filter-item-box) {
+    border: none;
+    padding: 0;
+  }
+}
+
+:global(.fold_vertical_container__disBox__leftJsx__disPanel__valBox) {
+  position: relative;
+
+  .filterItemWrappper {
+    :global(.fold_vertical_item_box) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.stepperInputVertical {
+  
+}

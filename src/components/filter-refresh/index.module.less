@@ -1,0 +1,22 @@
+@import 'styles/var.less';
+.refresh {
+  display: flex;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  align-items: center;
+  user-select: none;
+
+  :global(.iconfont) {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+
+  &:hover {
+    color: @color-primary;
+  }
+
+  &:active {
+    color: @color-primary;
+  }
+}

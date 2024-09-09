@@ -1,0 +1,253 @@
+@import 'styles/var.less';
+
+.wrapper {
+  height: 36px;
+  padding-bottom: 1px;
+  overflow: hidden;
+  position: relative;
+  background: @tab-background;
+  display: flex;
+  padding-top: 4px;
+  line-height: 32px;
+  font-size: 14px;
+  border-top: 1px solid rgba(228, 233, 237, 1);
+  padding-right: 120px;
+  padding-left: 4px;
+
+  .tabItemWrapper {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    top: -2px;
+
+    &.active {
+      color: @color-primary;
+      background: white;
+      &::before{
+        display: block;
+        position: absolute;
+        content: "";
+        width:10px;
+        height:10px;
+        background-color: #fff;
+        bottom: 0px;
+        left: -10px;
+      }
+      &::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width:10px;
+        height:10px;
+        background-color: #fff;
+        bottom: 0px;
+        right: -10px;
+      }
+
+      .tabBtnWrapper {
+        padding: 0 26px 0 10px;
+        letter-spacing: 0;
+        font-weight: 400;
+
+        .closeIconBtn {
+          display: inline-block;
+        }
+      }
+
+      .tabBtnWrapper {
+        &:before {
+          display: block;
+          position: absolute;
+          z-index: 4;
+          content: "";
+          width:15px;
+          height:15px;
+          border-radius: 50%;
+          background: #EFF3F6;
+          bottom: 0px;
+          left: -15px;
+        }
+
+        &:after {
+          display: block;
+          position: absolute;
+          z-index: 99;
+          content: "";
+          width:15px;
+          height:15px;
+          border-radius: 100%;
+          background: #EFF3F6;
+          bottom: 0px;
+          right: -15px;
+        }
+      }
+    }
+
+    &:hover {
+      background: white;
+      z-index: 99;
+
+      .tabBtnWrapper {
+        padding: 0 26px 0 10px;
+        letter-spacing: 0;
+        font-weight: 400;
+
+        .closeIconBtn {
+          display: inline-block !important;
+        }
+      }
+
+    }
+
+    &.manageBtnW {
+      &:hover {
+        background: transparent !important;
+        color: @color-primary;
+      }
+
+      &.hide {
+        visibility: hidden;
+      }
+
+      .tabManage {
+        font-size: 16px;
+        padding-left: 15px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 8px;
+          height: 16px;
+          display: inline-block;
+          z-index: 1;
+        }
+      }
+    }
+
+    .homeTab {
+      display: inline-block;
+      padding: 0 18px !important;
+    }
+
+    .tabBtnWrapper {
+      position: relative;
+      padding: 0 18px;
+
+      .closeIconBtn {
+        position: absolute;
+        right: 6px;
+        top: 9px;
+        display: none;
+        color: #022433;
+        height: 14px;
+        width: 14px;
+        border-radius: 100%;
+        font-size: 12px;
+        line-height: 1;
+        padding: 1px;
+
+        &:hover {
+          background: #E4E4E4;
+        }
+      }
+
+    }
+  }
+}
+
+.tabItemWrapper+.tabItemWrapper {
+  .tabBtnWrapper {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 8px;
+      height: 16px;
+      display: inline-block;
+      z-index: 1;
+    }
+  }
+}
+
+.tabContextMenuOptList {
+  padding: 8px 0;
+
+  li {
+    line-height: 32px;
+    cursor: pointer;
+    padding: 0 16px;
+    color: #022433;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}
+
+
+
+.tabOptWrapper {
+  text-align: right;
+  color: #022433;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  right: 2px;
+  padding-right: 4px;
+  background: @tab-background;
+  padding-left: 14px;
+  bottom: 0px;
+  box-shadow: 0 -10px 0px 0px #eff3f6;
+  padding-top: 8px;
+  height: 100%;
+
+  .optItem {
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.28s;
+
+    &:hover {
+      color: @color-primary;
+    }
+
+    &.isFirst {
+      box-shadow: -2px 0px 0px 0px rgba(209, 209, 209, 0.5);
+    }
+
+    &.disabled {
+      color: @gray;
+    }
+
+    &.switchHideHeaderBtn, &.KFullscreenButton {
+      position: relative;
+      i {
+        font-size: 14px;
+      }
+    }
+    
+
+    &:not(.KFullscreenButton)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 4px;
+      height: 16px;
+      font-size: 14px;
+      display: inline-block;
+      border-left: 1px solid #D0D4D5;
+      z-index: 1;
+    }
+  }
+
+  i {
+    display: inline-block;
+    position: relative;
+  }
+}

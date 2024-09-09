@@ -1,0 +1,25 @@
+@import 'styles/var.less';
+
+.wrapper {}
+
+
+.tabsLayoutWrapper{
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabsItemWrapper {
+  width: 100%;
+  display: none;
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  &.isActive{
+    display: flex;
+  }
+}
+

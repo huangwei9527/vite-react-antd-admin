@@ -1,0 +1,122 @@
+@import 'styles/var.less';
+.wrapper{
+  height: 100vh;
+  position: relative;
+
+  .loginFormWrapper{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 960px;
+    height: 550px;
+    padding: 5vh;
+    margin: auto;
+    overflow: hidden;
+    background: url(../../assets/images/login_bg.webp);
+    background-size: 100% 100%;
+    border-radius: 15px;
+  }
+  .loginFormLeft{
+    float: left;
+    width: 50%;
+    img{
+      display: inline-block;
+    }
+  }
+  .loginFormRight{
+    float: right;
+    width: 44%;
+    margin-left: 5.8%;
+    padding-top: 10px;
+  }
+
+  .loginFormTitle{
+    font-size: 54px;
+    font-weight: 500;
+    color: #515a6e;
+  }
+  .loginFormTitleTips{
+    margin-top: 24px;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #515a6e;
+  }
+  .loginInput{
+    height: 48px;
+    line-height: 48px;
+    :global(.ant-input-prefix){
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+    :global(.ant-input){
+      background-color: transparent !important;
+    }
+  }
+  .loginInput.code{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 90px);
+  }
+  .codeImage{
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    height: 40px;
+    padding: 0px 0 0px 10px;
+    margin-top: 4px;
+    .inner{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: @page-background;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 2px;
+      overflow: hidden;
+      .codeImageLoading{
+        position: absolute;
+        top: 3px;
+        left: 30px;
+        z-index: 20;
+        font-size: 20px;
+      }
+      .img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+  .loginOptBtn{
+    // padding-top: 10px;
+  }
+  .loginBtn{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    &.isDefaultTheme{
+      background-color: #2883e1;
+    }
+  }
+}
+
+
+.loginBg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  .loginBgInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
