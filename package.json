@@ -38,6 +38,7 @@
     "amfe-flexible": "^2.2.1",
     "autoprefixer": "^10.4.19",
     "babel-plugin-import": "^1.13.8",
+    "esbuild-wasm": "latest",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
@@ -54,6 +55,9 @@
     "vite": "^5.2.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "^4.3.2"
+  },
+  "overrides": {
+    "esbuild": "npm:esbuild-wasm@latest"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,tsx,ts}": [
